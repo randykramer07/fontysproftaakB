@@ -1,0 +1,304 @@
+@font-face {
+    font-family:radiocanada;
+    font-style:normal;
+    font-weight:400;
+    src:url(fonts/RadioCanada-Regular.ttf);
+    font-display:swap
+}
+@font-face {
+    font-family:radiocanada;
+    font-style:normal;
+    font-weight:700;
+    src:url(fonts/RadioCanada-Bold.ttf);
+    font-display:swap
+}
+* {
+    font-family:radiocanada,sans-serif
+}
+body {
+    background-color:#c8c8c8
+}
+html {
+    scroll-behavior:smooth
+}
+html::-webkit-scrollbar {
+    width:10px
+}
+html::-webkit-scrollbar-track {
+    background-color:transparent
+}
+html::-webkit-scrollbar-thumb {
+    background:#fff
+}
+.background-top-left {
+    position:absolute;
+    z-index:-1;
+    user-select:none
+}
+.nav {
+    background-color: #c8c8c8;
+    padding:50px
+}
+.nav h1 {
+    color:#000;
+    font-weight:900;
+    font-size:36px;
+    display:inline-block
+}
+.nav-items {
+    float:right;
+    padding-top:10px;
+    font-style: bold;
+}
+.nav-items a {
+    font-weight: 800;
+    font-size:20px;
+    color:#000;
+    margin-left:45px;
+    margin-right:45px;
+    text-decoration:none!important
+}
+.nav-wrap {
+    width:100%
+}
+
+.blue {
+    color:#0014cc
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center
+}
+.header-logo {
+    opacity: 0.0;
+    transition: 0.3s;
+}
+.header-logo:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.header-title {
+    margin-top:170px;
+    color:#000;
+    font-size:50px;
+    line-height:50px;
+    text-align:center;
+    font-weight:700;
+    max-width:1600px;
+    margin-left:auto;
+    margin-right:auto
+}
+.header-description {
+    color:#000;
+    font-size:30px;
+    text-align:center;
+    font-weight:400
+}
+#github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 350px;
+}
+#github .github-title {
+    text-align: center;
+}
+#github img {
+    width: 80%;
+    height: auto;
+}
+#github p {
+    color:#000;
+    font-size:24px;
+    line-height:30px;
+    margin-bottom:50px;
+    margin-top:20px;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto
+}
+#github a {
+    color:#000;
+    font-size:24px;
+    line-height:30px;
+    margin-bottom:50px;
+    margin-top:20px;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto
+    
+}
+
+#github button {
+    color:#000;
+    font-size:24px;
+    line-height:30px;
+    margin-bottom:50px;
+    margin-top:20px;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto
+}
+
+#informatie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    margin-bottom: 350px;
+}
+#informatie .informatie-title {
+    text-align: center;
+}
+#informatie p {
+    color:#000;
+    font-size:24px;
+    line-height:30px;
+    margin-bottom:50px;
+    margin-top:20px;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto
+}
+
+#demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center
+}
+#demo .demo-title {
+    text-align: center;
+}
+
+#demo p {
+    color:#000;
+    font-size:24px;
+    line-height:30px;
+    margin-bottom:50px;
+    margin-top:20px;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto
+}
+
+#demo button {
+    color:#000;
+    font-size:24px;
+    line-height:30px;
+    margin-bottom:50px;
+    margin-top:20px;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto
+}
+
+@media(min-width:1300px) {
+    .container {
+     max-width:1450px!important
+    }
+}
+@media screen and (max-width:1800px) {
+    .background-bottom {
+     display:none
+    }
+}
+@keyframes fly-in-bottom {
+    from {
+     opacity:0;
+     transform:translateY(200px)
+    }
+    to {
+     opacity:1;
+     transform:translateY(0px)
+    }
+}
+@keyframes fly-in-left {
+    from {
+     opacity:0;
+     transform:translatex(-200px)
+    }
+    to {
+     opacity:1;
+     transform:translateY(0px)
+    }
+}
+@keyframes fly-in-right {
+    from {
+        opacity: 0;
+        transform:translatex(200px)
+    }
+    to {
+        opacity: 1;
+        transform:translateY(0px);
+    }
+}
+.fly-in-left {
+    animation-name:fly-in-left;
+    -webkit-animation-name:fly-in-left
+}
+.fly-in-right {
+    animation-name:fly-in-right;
+    -webkit-animation-name:fly-in-right;
+}
+.fly-in-bottom {
+    animation-name:fly-in-bottom;
+    -webkit-animation-name:fly-in-bottom
+}
+.animated {
+    animation-duration:.3s;
+    animation-fill-mode:both;
+    -webkit-animation-duration:.3s;
+    -webkit-animation-fill-mode:both
+}
+.delay1 {
+    animation-delay:.2s
+}
+.delay2 {
+    animation-delay:.4s
+}
+.delay3 {
+    animation-delay:.6s
+}
+.delay4 {
+    animation-delay:.8s
+}
+.delay5 {
+    animation-delay:1s
+}
+.delay6 {
+    animation-delay:1.2s
+}
+.delay7 {
+    animation-delay:1.4s
+}
+.delay8 {
+    animation-delay:1.6s
+}
+.delay9 {
+    animation-delay:1.8s
+}
+.delay10 {
+    animation-delay:2s
+}
+.delay11 {
+    animation-delay:2.2s
+}
+.delay12 {
+    animation-delay:2.4s
+}
+.delay13 {
+    animation-delay:2.6s
+}
+.delay14 {
+    animation-delay:2.8s
+}
+.delay15 {
+    animation-delay:3s
+}
+.delay16 {
+    animation-delay:3.2s
+}
