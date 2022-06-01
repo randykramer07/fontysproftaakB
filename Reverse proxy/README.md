@@ -1,6 +1,9 @@
 # Reverse proxy
 
-We hebben een reverse proxy opgezet. De reverse proxy zorgt ervoor dat alle aanvragen die op de router binnen komen naar de goede server worden gestuurd. Dat gaat door middel van een poort forwarden in de router naar de reverse proxy server. Wij hebben daar poort 80 voor gebruikt en daarom luistert de reverse proxy server ook op poort 80. Als je een aanvraag doet op hanskazan.space ga je via de reverse proxy naar de webserver. Zo gaat dat ook met de andere aanvragen op ons domein. 
+We hebben een reverse proxy opgezet. De reverse proxy zorgt ervoor dat alle aanvragen die op de router binnen komen naar de goede server worden gestuurd. Dat gaat door middel van een poort forwarden in de router naar de reverse proxy server. Wij hebben daar poort 80 voor gebruikt en daarom luistert de reverse proxy server ook op poort 80. Als je een aanvraag doet op hanskazan.space ga je via de reverse proxy naar de webserver. Zo gaat dat ook met de andere aanvragen op ons domein.
+
+
+Voor de websocket zijn speciale regels toegevoegd aan de config file. Op die manier kan alle data dat komt kijken bij een websocket connectie goed door de reverse proxy heen lopen. 
 
 
 We hebben eerst Nginx geïnstalleerd op een server:
