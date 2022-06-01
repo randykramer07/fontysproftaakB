@@ -10,7 +10,7 @@ We hebben als eerst een Ubuntu vm gemaakt. Hier hebben we door de volgende comma
 
 sudo apt update 
 
-'''sudo apt install apache2'''
+```sudo apt install apache2```
 
 hierna is apache geinstalleerd en kun je de firewall poorten aanpassen. Je kunt kijken welke poorten je open kunt zetten door de onderstaande code 
 
