@@ -1,16 +1,16 @@
-Website 
+# Website 
 
 We hebben een simpele apache webpagina opgezet. Als je hanskazan.space opzoekt wordt je door de reverse proxy doorgestuurd naar de ip van de VM waar de webpagina op draait. 
 
- 
 
-Hoe hebben we het opgezet? 
+# Hoe hebben we het opgezet? 
 
-We hebben als eerst een Ubuntu vm gemaakt. Hier hebben we door de volgende commando apache op geïnstalleerd. 
+We hebben als eerst een Ubuntu vm gemaakt. Hier hebben we door de volgende commando apache op geïnstalleerd: 
+
 
 sudo apt update 
 
-sudo apt install apache2 
+'''sudo apt install apache2'''
 
 hierna is apache geinstalleerd en kun je de firewall poorten aanpassen. Je kunt kijken welke poorten je open kunt zetten door de onderstaande code 
 
